@@ -4,6 +4,7 @@ let turn = 'X'
 let gameover = false
 const winningImage = document.querySelector('img')
 let boxes = document.querySelectorAll('.box')
+const container = document.querySelector('#container')
 
 //Change Turn 
 const changeTurn = () => {
@@ -28,11 +29,12 @@ const checkWin = () => {
             document.querySelector('.info').innerText = boxtext[e[0]].innerText + ' Won'
             gameover = true
             winningImage.style.width = '200px'
-            boxtext.preventDefault()
-            
-        }
-        return null
-})
+            Array.from(boxes).forEach (element => {
+                element.style.pointerEvents = 'none'
+                console.log('disabling clicks')
+        })
+        console.log('removing clicks')
+}})
 }
 
 // Game Logic
