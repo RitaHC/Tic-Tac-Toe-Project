@@ -1,6 +1,6 @@
 # TIC TAC TOE GAME
 
-####DEPLOYED LINK
+###### DEPLOYED LINK
 https://ritahc.github.io/Tic-Tac-Toe-Project/
 
 # User Story
